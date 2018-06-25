@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # byj-resume
 
 > A Vue.js project
@@ -19,3 +20,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# BYJ-resume-v1
+a vue resume
+>>>>>>> baecb9ba46f48d7327a95b1f6057489a019703b1
