@@ -2,7 +2,7 @@
     <div class="resume-warpper">
         <div class="resume-left">
             <div class="avatar">
-                <img src="../assets/BYJ-resume.jpg" width="100" height="100">
+                <img src="../assets/BYJ-resume.jpg">
             </div>
             <div class="job">
                 <span class="name">岗位：WEB前端</span>
@@ -100,18 +100,18 @@
                     </div>
                     <span class="name">工作经历</span>
                     <span class="name-english">WORK&nbsp&nbspEXPERIENCE</span>
-                    </div>
+                </div>
                 <div class="desc">
-                    <div class="job">
+                    <!-- <div class="job">
                         <i class="iconfont icon-ic_pending"></i>
                         <span class="time">2017/06~2017/08</span>
                         <span class="company">科全经贸有限公司</span>
                         <span class="jobname">工作职位：电商美工</span>
                         <p class="text">工作内容：负责公司淘宝、天猫店铺的装修、宠物产品的拍摄、图片后期处理，详情页、主图、海报设计</p>
-                    </div>
+                    </div> -->
                     <div class="job">
                         <i class="iconfont icon-ic_pending"></i>
-                        <span class="time">2017/09~2018/05</span>
+                        <span class="time">2017/09—2018/05</span>
                         <span class="company abs">深圳市中天兴衍科技有限公司</span>
                         <span class="jobname">工作职位：设计/前端</span>
                         <p class="text">工作内容：主要负责设计各类活动的海报（节假日、早起卡、晚安图等），完成活动页面设计及前端静态页实现</p>
@@ -129,7 +129,7 @@
                 <div class="desc">
                     <div class="job">
                         <i class="iconfont icon-ic_pending"></i>
-                        <span class="time">早起打卡页面的设计加前端静态页的实现</span>
+                        <span class="time">早起打卡页面的静态页的实现</span>
                         <p class="text">技术：HTML/CSS</p>
                     </div>
                     <div class="job">
@@ -159,9 +159,9 @@
                     </div>
                 <div class="desc">
                     <div class="job">
-                        <p class="text extra">1.良好的沟通能力，性格开朗，乐于分享，喜欢有活力的团队</p>
-                        <p class="text extra">2.自学能力强，善于思考，善于与他人沟通，有团队合作精神</p>
-                        <p class="text extra">3.自己也有不足之处，比如：社会经验等欠缺，不过这些可以通过自身的努力而达到的</p>
+                        <p class="text">1.良好的沟通能力，性格开朗，乐于分享，喜欢有活力的团队</p>
+                        <p class="text">2.自学能力强，善于思考，善于与他人沟通，有团队合作精神</p>
+                        <!-- <p class="text extra">3.自己也有不足之处，比如：社会经验等欠缺，不过这些可以通过自身的努力而达到的</p> -->
                     </div>
                     
                 </div>
@@ -175,112 +175,118 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import "../common/css/reset"
     .resume-warpper
-        position absolute
-        top 0
-        left 0
-        width 595px
-        height 842px
+        min-width 3.2rem
+        max-width 6.4rem
+        margin 0 auto
+        width 100%
+        height 12rem
+        background-color pink
         .resume-left
             position relative
             float left
-            width 40%
+            top 0
+            left 0
+            width 46%
             height 100%
             background-color #2f3a40
             .avatar
                 position relative
                 overflow hidden
-                margin 30px auto 20px 
-                width 100px
-                height 100px
+                margin .3rem auto .2rem 
+                width 1rem
+                height 1rem
                 border-radius 50%
-                
-                
+                img
+                    vertical-align top
+                    width 1rem
+                    height 1rem  
             .job
-                margin 0 auto
-                text-align center
+                display flex
+                margin 0 
+                justify-content center
                 .name
                     display inline-block
-                    line-height 14px
-                    font-size 14px
+                    line-height 0.14rem
+                    font-size 0.14rem
                     font-weight 700
                     color #ffffff
-                    padding-bottom 6px
-                    border-bottom 2px solid #f6961e
+                    padding-bottom 0.06rem
+                    border-bottom 0.02rem solid #f6961e
             .info-wrapper
-                margin-top 30px
+                margin-top 0.3rem
                 .info
                     display flex
                     align-items center
-                    padding-left 12px
+                    padding-left 0.12rem
                     font-size 0
                     .icon
                         display flex
                         justify-content center
                         align-items center
                         z-index 99
-                        width 28px
-                        height 28px
+                        width 0.28rem
+                        height 0.28rem
                         border-radius 50%
-                        border 2px solid #2f3a40
+                        border 0.02rem solid #2f3a40
                         background-color #f6961e
                         .iconfont
-                            font-size 16px
+                            font-size 0.16rem
                             color #ffffff
                     .title-wrapper
                         display inline-block
                         position absolute
-                        margin-left 20px
+                        margin-left 0.2rem
                         z-index 80
-                        width 100px
+                        width 1.2rem
                         background-color #f6961e
                         text-align center
-                        border-radius 4px
+                        border-radius 0.04rem
                         .title
-                            font-size 14px
+                            font-size 0.14rem
                             font-weight 700
                             color #ffffff
                 .des
-                    margin 10px 0 0 20px
+                    margin 0.1rem 0 0 0.2rem
                     .title
-                        line-height 12px
+                        line-height 0.12rem
                         font-size 0
-                        margin-bottom 10px
+                        margin-bottom 0.1rem
                         .iconfont
                             display inline-block
                             vertical-align top
-                            margin-right 6px
-                            font-size 14px
+                            margin-right 0.06rem
+                            font-size 0.14rem
                             color rgb(#c9cdce)
                         .name
                             display inline-block
-                            font-size 12px
-                            margin 0
+                            font-size 0.12rem
                             color rgb(#ffffff)
             .info-wrapper
                 clear both
                 .skill
-                    margin 10px 0 0 20px
+                    margin 0.1rem 0 0 0.2rem
                     padding-left 0
                     .detail
-                        line-height 12px
+                        line-height 0.12rem
                         font-size 0
-                        margin-bottom 10px
+                        margin-bottom 0.1rem
                         .title
-                            font-size 12px
+                            font-size 0.12rem
                             color #ffffff
-                            margin 0
+                            margin-bottom 0.04rem
                         .progress
                             display inline-block
-                            width 180px
-                            height 8px
-                            border-radius 4px
+                            width 1.8rem
+                            height 0.08rem
+                            border-radius 0.04rem
                             background-color rgb(#d2d2d2)
                             .highlight
                                 display inline-block
                                 width 75%
                                 height 99%
-                                border-radius 4px
+                                border-radius 0.04rem
                                 background-color #f6961e
                             .css
                                 width 68%
@@ -293,12 +299,12 @@ export default {
                 
         .resume-right
             float right
-            width 60%
+            width 54%
             height 100%
             background-color #ffffff
             .work
                 position relative
-                margin 30px auto 20px
+                margin 0.3rem auto 0.2rem
                 .title
                     display flex
                     font-size 0
@@ -307,57 +313,58 @@ export default {
                         display flex
                         justify-content center
                         align-items center
-                        margin-left -17px
-                        width 30px
-                        height 30px
+                        margin-left -0.17rem
+                        width 0.3rem
+                        height 0.3rem
                         border-radius 50%
-                        border 2px solid #2f3a40
+                        border 0.02rem solid #2f3a40
                         background-color #fff
                         .iconfont
-                            font-size 20px
+                            font-size 0.2rem
                             color #f6961e
                     .name
                         display inline-block
-                        margin-left 10px
-                        font-size 18px
+                        margin-left 0.1rem
+                        font-size 0.18rem
                         color #2f3a40
-                        line-height 18px
+                        line-height 0.18rem
                         font-weight 800
                     .name-english
                         display inline-block
-                        margin-left 10px
-                        font-size 16px
+                        margin-left 0.1rem
+                        font-size 0.16rem
                         color #abacaf
             .desc
-                margin 4px 27px
+                margin 0.04rem 0.27rem
                 .job
-                    margin-bottom 20px
+                    margin-bottom 0.2rem
                     font-size 0
                     color #2f3a40
+                    .iconfont 
+                        font-size 0.01rem
+                        color #2f3a40
                     .time
                         display inline-block
-                        margin 0 10px 0 10px
-                        font-size 14px
+                        margin 0 0.1rem 0 0.1rem
+                        font-size 0.14rem
                         font-weight 700
                     .company
                         display inline-block
-                        font-size 14px
+                        font-size 0.14rem
                         font-weight 700 
                     .abs
-                        margin-left 26px
+                        margin-left 0.24rem
                     .jobname
                         display inline-block
-                        margin-left 26px
-                        font-size 14px
+                        margin-left 0.24rem
+                        font-size 0.14rem
                         font-weight 700
                     .text
                         display inline-block
-                        margin 0
-                        margin-top 6px
-                        margin-left 26px
-                        font-size 12px
-                    .extra
-                        margin-left 4px
+                        margin-left 0.24rem
+                        margin-top 0.06rem
+                        font-size 0.12rem
+                   
 
 
 
