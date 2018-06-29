@@ -2,7 +2,7 @@
     <div class="resume-warpper">
         <div class="resume-left">
             <div class="avatar">
-                <img src="../assets/byj.jpeg" width="90" height="90">
+                <img src="../assets/BYJ-resume.jpg" width="100" height="100">
             </div>
             <div class="job">
                 <span class="name">岗位：WEB前端</span>
@@ -189,11 +189,13 @@ export default {
             background-color #2f3a40
             .avatar
                 position relative
+                overflow hidden
                 margin 30px auto 20px 
-                width 90px
-                height 90px
-                img
-                    border-radius 50%
+                width 100px
+                height 100px
+                border-radius 50%
+                
+                
             .job
                 margin 0 auto
                 text-align center
