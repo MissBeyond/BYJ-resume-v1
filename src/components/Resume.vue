@@ -176,10 +176,8 @@ export default {
 </script>
 <style lang="stylus" scoped>
     .resume-warpper
-        min-width 3.2rem
-        max-width 6.4rem
-        margin 0 auto
         width 100%
+        margin 0 auto
         height 12rem
         background-color pink
         .resume-left
@@ -194,105 +192,101 @@ export default {
                 position relative
                 overflow hidden
                 margin .3rem auto .2rem 
-                width 1rem
-                height 1rem
+                width .8rem
+                height .8rem
                 border-radius 50%
                 img
                     vertical-align top
-                    width 1rem
-                    height 1rem  
+                    width .8rem
+                    height .8rem  
             .job
                 display flex
-                margin 0 
                 justify-content center
                 .name
                     display inline-block
-                    line-height 0.14rem
-                    font-size 0.14rem
-                    font-weight 700
+                    font-size .14rem
+                    font-weight 400
                     color #ffffff
-                    padding-bottom 0.06rem
-                    border-bottom 0.02rem solid #f6961e
+                    padding-bottom .04rem
+                    border-bottom .02rem solid #f6961e
             .info-wrapper
-                margin-top 0.3rem
+                margin-top .2rem
                 .info
                     display flex
                     align-items center
-                    padding-left 0.12rem
+                    padding-left .12rem
                     font-size 0
                     .icon
                         display flex
                         justify-content center
                         align-items center
                         z-index 99
-                        width 0.28rem
-                        height 0.28rem
+                        width .24rem
+                        height .24rem
                         border-radius 50%
-                        border 0.02rem solid #2f3a40
+                        border .02rem solid #2f3a40
                         background-color #f6961e
                         .iconfont
-                            font-size 0.16rem
+                            font-size .15rem
                             color #ffffff
                     .title-wrapper
                         display inline-block
                         position absolute
                         margin-left 0.2rem
                         z-index 80
-                        width 1.2rem
+                        width .9rem
+                        height .16rem
                         background-color #f6961e
                         text-align center
-                        border-radius 0.04rem
+                        border-radius 0.06rem
                         .title
-                            font-size 0.14rem
-                            font-weight 700
+                            font-size .12rem
+                            line-height .16rem
                             color #ffffff
                 .des
-                    margin 0.1rem 0 0 0.2rem
+                    margin .08rem 0 0 .16rem
                     .title
-                        line-height 0.12rem
                         font-size 0
                         margin-bottom 0.1rem
                         .iconfont
                             display inline-block
                             vertical-align top
-                            margin-right 0.06rem
-                            font-size 0.14rem
-                            color rgb(#c9cdce)
+                            margin-right .06rem
+                            font-size .14rem
+                            color #c9cdce
                         .name
                             display inline-block
-                            font-size 0.12rem
-                            color rgb(#ffffff)
-            .info-wrapper
-                clear both
-                .skill
-                    margin 0.1rem 0 0 0.2rem
-                    padding-left 0
-                    .detail
-                        line-height 0.12rem
-                        font-size 0
-                        margin-bottom 0.1rem
-                        .title
-                            font-size 0.12rem
+                            font-size .1rem
                             color #ffffff
-                            margin-bottom 0.04rem
+            .info-wrapper
+                .skill
+                    margin .1rem 0 0 .18rem
+                    .detail
+                        line-height .1rem
+                        font-size 0
+                        margin-bottom .1rem
+                        .title
+                            font-size .1rem
+                            color #ffffff
+                            margin-bottom .04rem
                         .progress
                             display inline-block
-                            width 1.8rem
-                            height 0.08rem
-                            border-radius 0.04rem
-                            background-color rgb(#d2d2d2)
+                            width 1.4rem
+                            height .06rem
+                            border-radius .04rem
+                            background-color #d2d2d2
                             .highlight
                                 display inline-block
                                 width 75%
                                 height 99%
-                                border-radius 0.04rem
+                                border-radius .04rem
                                 background-color #f6961e
                             .css
-                                width 68%
+                                width 65%
                             .js
-                                width 50%
+                                width 40%
                             .vue
-                                width 60%
+                                width 55%
                             .ps
                                 width 55%
                 
@@ -300,10 +294,10 @@ export default {
             float right
             width 54%
             height 100%
-            background-color #ffffff
+            background-color #effbfe
             .work
                 position relative
-                margin 0.3rem auto 0.2rem
+                margin .3rem auto .2rem
                 .title
                     display flex
                     font-size 0
@@ -312,56 +306,60 @@ export default {
                         display flex
                         justify-content center
                         align-items center
-                        margin-left -0.17rem
-                        width 0.3rem
-                        height 0.3rem
+                        margin-left -0.1 rem
+                        width .2rem
+                        height .2rem
                         border-radius 50%
-                        border 0.02rem solid #2f3a40
+                        border .02rem solid #2f3a40
                         background-color #fff
                         .iconfont
-                            font-size 0.2rem
+                            font-size .14rem
                             color #f6961e
                     .name
                         display inline-block
-                        margin-left 0.1rem
-                        font-size 0.18rem
+                        margin-left .04rem
+                        font-size .14rem
                         color #2f3a40
-                        line-height 0.18rem
-                        font-weight 800
+                        line-height .24rem
+                        font-weight 500
                     .name-english
                         display inline-block
-                        margin-left 0.1rem
-                        font-size 0.16rem
+                        margin-left .1rem
+                        font-size .1rem
+                        line-height .24rem
                         color #abacaf
             .desc
-                margin 0.04rem 0.27rem
+                margin .04rem .16rem
                 .job
-                    margin-bottom 0.2rem
+                    margin-bottom .1rem
                     font-size 0
                     color #2f3a40
                     .iconfont 
-                        font-size 0.01rem
+                        font-size .12rem
                         color #2f3a40
                     .time
                         display inline-block
-                        margin 0 0.1rem 0 0.1rem
-                        font-size 0.14rem
+                        margin 0 .1rem 0 .04rem
+                        font-size .12rem
                         font-weight 700
+                        padding-bottom .04rem
                     .company
                         display inline-block
-                        font-size 0.14rem
-                        font-weight 700 
+                        font-size 0.12rem
+                        font-weight 500 
                     .abs
-                        margin-left 0.24rem
+                        margin-left .14rem
+                        padding-bottom .06rem
+                        font-weight 700
                     .jobname
                         display inline-block
-                        margin-left 0.24rem
-                        font-size 0.14rem
-                        font-weight 700
+                        margin-left .14rem
+                        font-size 0.12rem
                     .text
                         display inline-block
-                        margin-left 0.24rem
-                        margin-top 0.06rem
+                        margin-left .14rem
+                        margin-top 0.04rem
+                        line-height .16rem
                         font-size 0.12rem
                    
 
