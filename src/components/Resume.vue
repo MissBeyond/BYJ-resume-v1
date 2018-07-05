@@ -47,15 +47,19 @@
                 <div class="des">
                     <div class="title">
                         <i class="iconfont icon-dianhua1"></i>
-                        <p class="name">电&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp话：13981739826</p>
+                        <p class="name">电&nbsp&nbsp&nbsp&nbsp话：13981739826</p>
                     </div>
                     <div class="title">
                         <i class="iconfont icon-tubiao209"></i>
-                        <p class="name">邮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp箱：2546776177@qq.com</p>
+                        <p class="name"><a href="https://mail.qq.com/cgi-bin/frame_html?sid=CHmD32eVY6_Sqzxn&r=177550b1f68a20e84d61b56f81bfdd8e" class="link">邮箱：2546776177@qq.com</a></p>
+                    </div>
+                    <div class="title">
+                        <i class="iconfont icon-GitHub"></i>
+                        <p class="name"><a href="https://github.com/MissBeyond" class="link">Github：MissBeyond</a></p>
                     </div>
                     <div class="title">
                         <i class="iconfont icon-shouye"></i>
-                        <p class="name">住&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp址：深圳南山区</p>
+                        <p class="name">住&nbsp&nbsp&nbsp&nbsp址：深圳南山区</p>
                     </div>
                 </div>
             </div>
@@ -91,6 +95,7 @@
                     </li>
                 </ul>
             </div>
+            
         </div>
         <div class="resume-right">
             <div class="work">
@@ -99,7 +104,7 @@
                         <i class="iconfont icon-gongju1"></i>
                     </div>
                     <span class="name">工作经历</span>
-                    <span class="name-english">WORK&nbsp&nbspEXPERIENCE</span>
+                    <!-- <span class="name-english">WORK&nbsp&nbspEXPERIENCE</span> -->
                 </div>
                 <div class="desc">
                     <!-- <div class="job">
@@ -124,13 +129,14 @@
                         <i class="iconfont icon-xiangmu"></i>
                     </div>
                     <span class="name">项目经历</span>
-                    <span class="name-english">PROJECTS&nbsp&nbspEXPERIENCE</span>
+                    <!-- <span class="name-english">PROJECTS&nbsp&nbspEXPERIENCE</span> -->
                     </div>
                 <div class="desc">
                     <div class="job">
                         <i class="iconfont icon-ic_pending"></i>
-                        <span class="time">早起打卡页面的静态页的实现</span>
+                        <span class="time">早起打卡页面的静态页</span>
                         <p class="text">技术：HTML/CSS</p>
+                        <p class="text">微信公众号页面，使用rem布局，能够编写语义化的HTML，模块化的CSS，了解常见浏览器兼容性问题及解决方案，了解stylus、sass等css预处理器技术</p>
                     </div>
                     <div class="job">
                         <i class="iconfont icon-ic_pending"></i>
@@ -139,13 +145,9 @@
                     </div>
                     <div class="job">
                         <i class="iconfont icon-ic_pending"></i>
-                        <span class="time">Vue.js 实战去哪儿网</span>
-                        <p class="text">技术栈：Vue 全家桶及其他相关技术</p>
-                    </div>
-                    <div class="job">
-                        <i class="iconfont icon-ic_pending"></i>
                         <span class="time">快餐店的POS系统</span>
-                        <p class="text">系统使用的技术栈为：Vue+Webpack+Element+Axios+vueRouter</p>
+                        <p class="text">系统使用的技术栈为：</p>
+                        <p class="text">Vue+Webpack+Element+Axios<br/>+vueRouter</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +157,7 @@
                         <i class="iconfont icon-aixin"></i>
                     </div>
                     <span class="name">自我评价</span>
-                    <span class="name-english">SELF&nbsp&nbspEVALUATION</span>
+                    <!-- <span class="name-english">SELF&nbsp&nbspEVALUATION</span> -->
                     </div>
                 <div class="desc">
                     <div class="job">
@@ -178,7 +180,7 @@ export default {
     .resume-warpper
         width 100%
         margin 0 auto
-        height 12rem
+        height 17rem
         background-color pink
         .resume-left
             position relative
@@ -191,95 +193,99 @@ export default {
             .avatar
                 position relative
                 overflow hidden
-                margin .3rem auto .2rem 
-                width .8rem
-                height .8rem
+                margin .4rem auto .2rem 
+                width 1.4rem
+                height 1.4rem
                 border-radius 50%
                 img
                     vertical-align top
-                    width .8rem
-                    height .8rem  
+                    width 1.4rem
+                    height 1.4rem  
             .job
                 display flex
                 justify-content center
                 .name
                     display inline-block
-                    font-size .14rem
+                    font-size .28rem
                     font-weight 400
                     color #ffffff
                     padding-bottom .04rem
-                    border-bottom .02rem solid #f6961e
+                    border-bottom .04rem solid #f6961e
+                
             .info-wrapper
-                margin-top .2rem
+                margin-top .4rem
                 .info
                     display flex
                     align-items center
-                    padding-left .12rem
+                    padding-left .24rem
                     font-size 0
                     .icon
                         display flex
                         justify-content center
                         align-items center
                         z-index 99
-                        width .24rem
-                        height .24rem
+                        width .48rem
+                        height .48rem
                         border-radius 50%
-                        border .02rem solid #2f3a40
+                        border .04rem solid #2f3a40
                         background-color #f6961e
                         .iconfont
-                            font-size .15rem
+                            font-size .24rem
                             color #ffffff
                     .title-wrapper
                         display inline-block
                         position absolute
                         margin-left 0.2rem
                         z-index 80
-                        width .9rem
-                        height .16rem
+                        width 1.8rem
+                        height .32rem
                         background-color #f6961e
                         text-align center
-                        border-radius 0.06rem
+                        border-radius 0.12rem
                         .title
-                            font-size .12rem
-                            line-height .16rem
+                            font-size .24rem
+                            line-height .32rem
                             color #ffffff
                 .des
-                    margin .08rem 0 0 .16rem
+                    margin .16rem 0 0 .32rem
                     .title
                         font-size 0
                         margin-bottom 0.1rem
                         .iconfont
                             display inline-block
                             vertical-align top
-                            margin-right .06rem
-                            font-size .14rem
+                            margin-right .12rem
+                            font-size .28rem
                             color #c9cdce
                         .name
                             display inline-block
-                            font-size .1rem
+                            font-size .2rem
                             color #ffffff
+                            .link
+                                text-decoration none
+                                color #f6961e
             .info-wrapper
                 .skill
-                    margin .1rem 0 0 .18rem
+                    margin .2rem 0 0 .36rem
                     .detail
-                        line-height .1rem
+                        line-height .2rem
                         font-size 0
                         margin-bottom .1rem
                         .title
-                            font-size .1rem
+                            font-size .2rem
                             color #ffffff
-                            margin-bottom .04rem
+                            margin-bottom .08rem
                         .progress
                             display inline-block
-                            width 1.4rem
-                            height .06rem
-                            border-radius .04rem
+                            width 2.4rem
+                            height .12rem
+                            border-radius .08rem
                             background-color #d2d2d2
                             .highlight
                                 display inline-block
                                 width 75%
-                                height 99%
-                                border-radius .04rem
+                                height 100%
+                                border-radius .08rem
                                 background-color #f6961e
                             .css
                                 width 65%
@@ -297,7 +303,8 @@ export default {
             background-color #effbfe
             .work
                 position relative
-                margin .3rem auto .2rem
+                margin .4rem auto 0
+                font-size 0
                 .title
                     display flex
                     font-size 0
@@ -306,61 +313,60 @@ export default {
                         display flex
                         justify-content center
                         align-items center
-                        margin-left -0.1 rem
-                        width .2rem
-                        height .2rem
+                        margin-left -0.2 rem
+                        width .44rem
+                        height .44rem
                         border-radius 50%
-                        border .02rem solid #2f3a40
+                        border .04rem solid #2f3a40
                         background-color #fff
                         .iconfont
-                            font-size .14rem
+                            font-size .24rem
                             color #f6961e
                     .name
                         display inline-block
-                        margin-left .04rem
-                        font-size .14rem
+                        margin-left .08rem
+                        font-size .24rem
                         color #2f3a40
-                        line-height .24rem
+                        line-height .48rem
                         font-weight 500
                     .name-english
                         display inline-block
-                        margin-left .1rem
-                        font-size .1rem
-                        line-height .24rem
+                        margin-left .2rem
+                        font-size .2rem
+                        line-height .48rem
                         color #abacaf
             .desc
-                margin .04rem .16rem
+                margin .08rem .32rem
                 .job
-                    margin-bottom .1rem
+                    margin-bottom .2rem
                     font-size 0
                     color #2f3a40
                     .iconfont 
-                        font-size .12rem
+                        font-size .24rem
                         color #2f3a40
                     .time
                         display inline-block
-                        margin 0 .1rem 0 .04rem
-                        font-size .12rem
+                        margin 0 .2rem 0 .08rem
+                        font-size .2rem
                         font-weight 700
                         padding-bottom .04rem
                     .company
                         display inline-block
-                        font-size 0.12rem
+                        font-size 0.2rem
                         font-weight 500 
                     .abs
-                        margin-left .14rem
-                        padding-bottom .06rem
+                        margin-left .28rem
+                        padding-bottom .04rem
                         font-weight 700
                     .jobname
                         display inline-block
-                        margin-left .14rem
-                        font-size 0.12rem
+                        margin-left .28rem
+                        font-size .2rem
                     .text
                         display inline-block
-                        margin-left .14rem
-                        margin-top 0.04rem
-                        line-height .16rem
-                        font-size 0.12rem
+                        margin-left .28rem
+                        line-height .32rem
+                        font-size 0.2rem
                    
 
 
