@@ -175,7 +175,6 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-@import "../common/css/reset"
     .resume-warpper
         min-width 3.2rem
         max-width 6.4rem
